@@ -211,12 +211,9 @@
 			const globalAPIBase = getBase();
 			
 			function getBase() {
-				if (window.location.href.indexOf("https://takepoints.io") == 0) {
-					return "https://api.takepoints.io";
+				if (window.location.href.indexOf("https://takepoints.spct.xyz") == 0) {
+					return "https://api.takepoints.spct.xyz";
 				} 
-				else if (window.location.href.indexOf("https://takepoint.nitrogem35.pw") == 0) {
-					return "https://api.nitrogem35.pw";
-				}
 				else {
 					let parts = window.location.href.split(":");
 					let ending = parts.pop().split("/")[0];
